@@ -1,0 +1,12 @@
+{
+  "movie": [
+    {
+      "id": "tt0113497",
+      "title": "jumanji",
+      "year": "2003",
+      "genre": ["comedy", "adventure"],
+      "director": "Siapa",
+      "image_url": "https://"
+    }
+  ]
+}
