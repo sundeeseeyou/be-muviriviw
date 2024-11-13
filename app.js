@@ -1,24 +1,18 @@
 import express from "express";
 import axios from "axios";
-import bodyParser from "body-parser";
-import { getStoredPosts, storePosts } from "./data/posts.js";
+import cors from "cors";
+import dotenv from "dotenv";
 
 const app = express();
-const PORT = 3000;
+const PORT = 3030;
+dotenv.config();
 
-app.use(bodyParser.json());
-
-app.use((req, res, next) => {
-  // Attach CORS headers
-  // Required when using a detached backend (that runs on a different domain)
-  res.setHeader("Access-Control-Allow-Origin", "*");
-  res.setHeader("Access-Control-Allow-Methods", "GET,POST");
-  res.setHeader("Access-Control-Allow-Headers", "Content-Type");
-  next();
-});
+app.use(express.json());
+app.use(cors());
 
 app.get("/", (req, res) => {
-  res.sendStatus(200);
+  res.json({ message: "Hellow" });
+  console.log(PORT);
 });
 
 app.listen(PORT, () => {
