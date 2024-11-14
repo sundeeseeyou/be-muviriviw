@@ -3,9 +3,16 @@
     {
       "id": "123",
       "movie_id": "tt0113497",
-      "blog_desc": "",
-      "rating": "",
-      "user": ""
+      "blog_desc": "test",
+      "rating": "5",
+      "user": "Agus"
+    },
+    {
+      "id": "124",
+      "movie_id": "tt0113497",
+      "blog_desc": "test 2",
+      "rating": "4",
+      "user": "sandi"
     }
   ]
 }
